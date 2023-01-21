@@ -44,10 +44,10 @@ const SKY_LIGHT_DIM = 1; //这是天空的亮度	zc
 const SKY_LIGHT_NORMAL = 2; //这是天空的亮度 光照
 
 const COLOR = { //这是颜色
-	Red: '#ffbf36', //这是红色
-	Green: '#ffffff', //这是绿色
-	// Blue: '#1e7fff', //这是蓝色
-	// Purple: '#e60aff', //这是紫色
+	Red: '#fa4b3e', //这是红色
+	Green: '#B5A642', //这是绿色
+	Blue: '#6699ff', //这是蓝色
+	Purple: '#ff9999', //这是紫色
 	Gold: '#ffbf36', //这是金色
 	White: '#ffffff' //这是白色
 };
