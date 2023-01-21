@@ -50,7 +50,7 @@ const COLOR = { //这是颜色
 	Purple: '#ff9999', //这是紫色
 	Gold: '#ffbf36', //这是金色
 	White: '#ffffff' //这是白色
-}
+};
 
 
 const INVISIBLE = '_INVISIBLE_'; //这是不可见的
@@ -710,6 +710,21 @@ const shellTypes = {
 	'Willow': willowShell //这是Willow烟花的函数
 };
 
+const shellTypeText = {
+	"Random":"新年快乐",
+	"Crackle":"财源滚滚（hot）",
+	"Falling Leaves":"招财进宝（hot）",
+	"Ghost":"飞黄腾达（hot）",
+	"Palm":"恭喜发财",
+	"Crossette":"荣华富贵",
+	"Crysanthemum":"大吉大利",
+	"Floral":"暴富暴美",
+	"Horse Tail":"前程似锦",
+	"Ring":"博学多才",
+	"Strobe":"吉祥如意",
+	"Willow":"大展宏“兔”"
+}
+
 const shellNames = Object.keys(shellTypes); //这是一个烟花的名字
 
 
@@ -721,7 +736,7 @@ function init() {
 		node.innerHTML = options.reduce((acc, opt) => acc += `<option value="${opt.value}">${opt.label}</option>`, '');
 	} //这是一个设置一些烟花的配置的函数
 	let options = '';
-	shellNames.forEach(opt => options += `<option value="${opt}">${opt}</option>`);
+	shellNames.forEach(opt => options += `<option value="${opt}">${shellTypeText[opt]}</option>`);
 	appNodes.shellType.innerHTML = options;
 	options = '';
 	['3"', '4"', '6"', '8"', '12"', '16"'].forEach((opt, i) => options += `<option value="${i}">${opt}</option>`);
