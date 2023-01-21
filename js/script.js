@@ -50,7 +50,7 @@ const COLOR = { //这是颜色
 	Purple: '#ff9999', //这是紫色
 	Gold: '#ffbf36', //这是金色
 	White: '#ffffff' //这是白色
-};
+}
 
 
 const INVISIBLE = '_INVISIBLE_'; //这是不可见的
